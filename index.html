@@ -17,16 +17,28 @@
     <main>
         <div class="container">
             <div class="row">
-                <label for="nome">Nome Cognome</label>
-                <input id="name" type="text" name="nome" placeholder="inserisci il tuo nome">
-                <label for="km">Km da percorrere</label>
-                <input id="km" type="number" name="km" placeholder="inserisci i km">
-                <label for="ageRange">Fascia d'et&agrave;</label>
-                <select name="ageRange" id="ageRange">
-                    <option value="minor">Minorenne</option>
-                    <option value="major">Maggiorenne</option>
-                    <option value="over65">Over 65</option>
-                </select>
+                <!-- nome -->
+                <div class="flex-column">
+                    <label for="nome">Nome Cognome</label>
+                    <input id="name" type="text" name="nome" placeholder="inserisci il tuo nome">
+                </div>
+                <!-- /nome  -->
+                <!-- km -->
+                <div class="flex-column">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="number" name="km" placeholder="inserisci i km">
+                </div>
+                <!-- /km -->
+                <!-- fascia età  -->
+                <div class="flex-column">
+                    <label for="ageRange">Fascia d'et&agrave;</label>
+                    <select name="ageRange" id="ageRange">
+                        <option value="minor">Minorenne</option>
+                        <option value="major">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>           
+                <!-- /fascia età -->
             </div>
             <div class="row">
                 <button id="ticketGenerator">Genera</button>
@@ -36,25 +48,25 @@
         <h2>il tuo biglietto</h2>
         <div class="container">
             <h3>Dettaglio Passeggeri</h3>
-            <div class="row">
-                <div>
+            <div class="row_bottom">
+                <div class="passengerName">
                     <h3>Nome Passeggero</h3>
                     <p id="passengerName"></p>
                 </div>
-                <div>
+                <div class="ticketData">
                     <h4>Offerta</h4>
                     <p id="offer"></p>
                 </div>
-                <div>
+                <div class="ticketData">
                     <h4>Carrozza</h4>
                     <p id="carNumber"></p>
                 </div>
-                <div>
-                    <h4>Codice CP</h4>
+                <div class="ticketData">
+                    <h4>Codice <br>CP</h4>
                     <p id="cpCode"></p>
                 </div>
-                <div>
-                    <h4>Costo</h4>
+                <div class="ticketData">
+                    <h4>Costo biglietto</h4>
                     <p id="ticketPrice"></p>
                 </div>
             </div>            

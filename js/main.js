@@ -34,14 +34,14 @@ ticketGenerator.addEventListener('click',
         console.log(km);
         console.log(price);
         if ( ageRange == 'Sconto minorenne')
-            price = price * 0.4;
-        else if (ageRange == 'Sconto Over 65')
             price = price * 0.6;
+        else if (ageRange == 'Sconto Over 65')
+            price = price * 0.4;
         document.getElementById('passengerName').innerHTML = '<p>' + name + '</p>';
         document.getElementById('offer').innerHTML = '<p>' + ageRange + '</p>';
         document.getElementById('carNumber').innerHTML = '<p>' + carNumber + '</p>';
         document.getElementById('cpCode').innerHTML = '<p>' + cpCode + '</p>';
-        document.getElementById('ticketPrice').innerHTML = '<p>' + price + '</p>';
+        document.getElementById('ticketPrice').innerHTML = '<p>' + price.toFixed(2) + '€' + '</p>';
         
         }
 )
