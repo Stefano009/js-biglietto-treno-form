@@ -11,7 +11,12 @@ body {
 }
 h1, h2 {
     text-align: center;
-    color: white;    
+    color: white;
+    padding: 1rem 0;
+    text-transform: uppercase;    
+}
+h2 {
+    padding-bottom: 0 !important;
 }
 .container {
     background-color: white;
@@ -53,6 +58,7 @@ h1, h2 {
 }
 /* /ticket generator Div  */
 /* /ticket generated  */
+
 .row_bottom {
     display: flex;
     justify-content: left;
@@ -62,6 +68,7 @@ h1, h2 {
     border: 2.5px solid  lightgray;
     border-right: none;
     height: 150px;
+    text-transform: capitalize;
 }
 .passengerName {
     background-color: #808080;
@@ -80,4 +87,7 @@ h1, h2 {
     width: 15%;
     padding: 1rem 0.5rem;
     font-size: 1.25rem;
+}
+#none {
+    display: none;
 }
