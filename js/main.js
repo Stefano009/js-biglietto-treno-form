@@ -50,7 +50,7 @@ ticketAbort.addEventListener('click',
         document.getElementById('name').value = '';
         document.getElementById('km').value = '';
         document.getElementById('ageRange').value = '';
-        document.getElementById('passengerName').innerHTML = '';
+        document.getElementById('passengerName').innerHTML = ''
         document.getElementById('offer').innerHTML = '';
         document.getElementById('carNumber').innerHTML = '';
         document.getElementById('cpCode').innerHTML = '';
