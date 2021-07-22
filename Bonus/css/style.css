@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common */
+body {
+    background-color: #B91450;
+    height: 100%;
+    width: 100vw;
+}
+h1, h2 {
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    text-transform: uppercase;    
+}
+h2 {
+    padding-bottom: 0 !important;
+}
+.container {
+    background-color: white;
+    color: #B91450;
+    padding: 2rem 5rem;
+    margin: 0 auto;
+    width: 80%;
+
+}
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+/* common */
+/* /ticket generator Div */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+#name, 
+#km, 
+#ageRange {
+    padding: 0.25rem;
+    margin: 1rem 0;
+    background-color: white;
+    border-color: #B91450;
+    border-radius: 0.25rem;
+}
+#ticketGenerator, 
+#ticketAbort {
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #B91450;
+}
+/* /ticket generator Div  */
+/* /ticket generated  */
+
+.row_bottom {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    color: black;
+    border: 2.5px solid  lightgray;
+    border-right: none;
+    height: 100%;
+    text-transform: capitalize;
+    width: 100%;
+}
+.passengerName {
+    background-color: #808080;
+    flex-wrap: wrap;
+    width: 20%;
+    padding: 1rem 0.5rem;
+    font-size: 1.25rem;
+    margin: 0;
+}
+.ticketData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 15%;
+    padding: 1rem 0.5rem;
+    font-size: 1.25rem;
+}
+#none {
+    transform-origin: top;
+    transform: scaleY(0);
+}
+/* responsive */
+@media (max-width: 1200px) {
+    .row_bottom {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .passengerName {
+        width: 50%;
+    }
+    .ticketData {
+        width: 25%;
+    }
+}
+@media (max-width: 640px) {
+    .row,
+    .row_bottom {
+        flex-direction: column;
+    }
+}
