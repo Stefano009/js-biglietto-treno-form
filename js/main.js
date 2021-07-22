@@ -9,7 +9,8 @@ var ticketGenerator = document.getElementById('ticketGenerator');
 var ticketAbort = document.getElementById('ticketAbort');
 ticketGenerator.addEventListener('click',
     function(){
-        document.getElementById('none').style.display = "block";
+        document.getElementById('none').style.transition = "all 0.5s ease-in-out" ;
+        document.getElementById('none').style.transform = "scaleY(1)";
         var name = document.getElementById('name').value;
         var km = document.getElementById('km').value;
         console.log(km);
@@ -56,7 +57,8 @@ ticketAbort.addEventListener('click',
         document.getElementById('carNumber').innerHTML = '';
         document.getElementById('cpCode').innerHTML = '';
         document.getElementById('ticketPrice').innerHTML = '';
-        document.getElementById('none').style.display = "none";
+        document.getElementById('none').style.transition ="all 0.5s ease-in-out";
+        document.getElementById('none').style.transform = "scaleY(0)";
         }
 )
 

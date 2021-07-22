@@ -89,5 +89,6 @@ h2 {
     font-size: 1.25rem;
 }
 #none {
-    display: none;
+    transform-origin: top;
+    transform: scaleY(0);
 }
