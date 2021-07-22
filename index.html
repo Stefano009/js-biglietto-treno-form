@@ -16,16 +16,22 @@
     <!-- main section  -->
     <main>
         <div class="container">
-            <label for="nome">Nome Cognome</label>
-            <input id="name" type="text" name="nome" placeholder="inserisci il tuo nome">
-            <label for="km">Km da percorrere</label>
-            <input id="km" type="number" name="km" placeholder="inserisci i km">
-            <label for="ageRange">Fascia d'et&agrave;</label>
-            <select name="ageRange" id="ageRange">
-                <option value="minor">Minorenne</option>
-                <option value="major">Maggiorenne</option>
-                <option value="over65">Over 65</option>
-            </select>
+            <div class="row">
+                <label for="nome">Nome Cognome</label>
+                <input id="name" type="text" name="nome" placeholder="inserisci il tuo nome">
+                <label for="km">Km da percorrere</label>
+                <input id="km" type="number" name="km" placeholder="inserisci i km">
+                <label for="ageRange">Fascia d'et&agrave;</label>
+                <select name="ageRange" id="ageRange">
+                    <option value="minor">Minorenne</option>
+                    <option value="major">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+            </div>
+            <div class="row">
+                <button id="ticketGenerator">Genera</button>
+                <button id="ticketAbort">Annulla</button>
+            </div>            
         </div>
     </main>
     <!-- /main section -->
