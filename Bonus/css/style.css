@@ -33,6 +33,11 @@ h2 {
     width: 100%;
     height: 100%;
 }
+input:focus,
+select:focus {
+    background-color: #B91450 !important;
+    color: white;
+}
 /* common */
 /* /ticket generator Div */
 .flex-column {
@@ -85,11 +90,10 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     flex-wrap: wrap;
     width: 15%;
     padding: 1rem 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 #none {
     transform-origin: top;
